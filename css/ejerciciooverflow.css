@@ -1,0 +1,15 @@
+body {
+  margin-right: 900px;
+}
+
+p {
+  overflow: hidden;
+  background-color: greenyellow;
+  height: 300px;
+}
+
+.p2 {
+  overflow: auto;
+  background-color: greenyellow;
+  height: 300px;
+}
