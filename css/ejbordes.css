@@ -1,0 +1,13 @@
+body {
+  margin-right: 550px;
+  margin-left: 550px;
+  margin-top: 50px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: dotted 5px green;
+  border-left: double 10px;
+  border-bottom: solid 5px red;
+  border-right: dashed 9px blue;
+}
