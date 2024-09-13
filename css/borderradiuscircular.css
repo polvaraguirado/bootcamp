@@ -1,10 +1,32 @@
+body {
+  background-color: rgb(194, 201, 228);
+}
+
 h1 {
   background: rgb(0, 200, 255);
- margin-left: 600px;
- margin-right: 660px;
+  margin-left: 600px;
+  margin-right: 660px;
+  margin-bottom: 1px;
 }
-tabla{
-background-color: antiquewhite;
+table {
+  background-color: rgb(233, 217, 196);
+  margin-left: 500px;
+  border: 5px solid;
+  border-spacing: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 3px;
 
 
+}
+table th, table td {
+padding-right: 30px;
+  text-align: center; 
+  border: 2px solid;
+}
+
+.iva{
+  background: rgb(0, 200, 255);
+
+ 
 }
