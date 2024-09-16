@@ -1,0 +1,85 @@
+body {
+  margin-top: 30px;
+  margin-left: -150px;
+}
+
+i {
+  margin-left: 51.5%;
+}
+
+.rojoprimario {
+  border-radius: 50%;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  margin-left: 50%;
+  float: left;
+}
+.verdeprimario {
+  border-radius: 50%;
+  background-color: #14ff14;
+  height: 50px;
+  width: 50px;
+  margin-left: 54%;
+}
+.azulprimario {
+  border-radius: 50%;
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  margin-left: 58%;
+  margin-top: -49px;
+}
+.suma {
+  margin-left: 52.5%;
+}
+.suma2 {
+  margin-left: 52.5%;
+  margin-top: 35px
+}
+.igual {
+  margin-left: 57.8%;
+  margin-top: -33px;
+}
+.rojo {
+  border-radius: 50%;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  margin-left: 49%;
+  float: left;
+}
+.azul {
+  border-radius: 50%;
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  margin-left: 54%;
+  margin-top: -48px;
+}
+.fucsia {
+  border-radius: 50%;
+  background-color: fuchsia;
+  height: 50px;
+  width: 50px;
+  margin-left: 59%;
+  margin-top: -50px;
+}
+.azul2 {
+  border-radius: 50%;
+  background-color: blue;
+  height: 50px;
+  width: 50px;
+  margin-left: 49%;
+  margin-top: 20px;
+  float: left;
+}
+
+.verde2{
+    border-radius: 50%;
+    background-color: #14ff14;
+    height: 50px;
+    width: 50px;
+    margin-left: 54%;
+    margin-top: -48px;
+  }
