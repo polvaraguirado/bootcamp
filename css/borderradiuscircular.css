@@ -1,16 +1,17 @@
 body {
   background-color: rgb(194, 201, 228);
+  text-align: center;
 }
 
 h1 {
   background: rgb(0, 200, 255);
-  margin-left: 600px;
-  margin-right: 660px;
+  margin-left: 800px;
+  margin-right: 870px;
   margin-bottom: 1px;
 }
 table {
   background-color: rgb(233, 217, 196);
-  margin-left: 500px;
+  margin-left: 720px;
   border: 5px solid;
   border-spacing: 0px;
   border-top-left-radius: 20px;
@@ -18,12 +19,12 @@ table {
   padding: 3px;
 }
 
-tbody tr td{
+tbody tr td {
   padding-right: 30px;
-  text-align: center;
-  border: 2px solid;
+  border-bottom: 2px solid;
+  border-left: 1px solid;
+  
 }
-
 
 tfoot {
   background: rgb(0, 200, 255);
