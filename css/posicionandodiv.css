@@ -1,0 +1,56 @@
+.box {
+  background-color: red;
+  width: 250px;
+  height: 250px;
+  outline: auto;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+p {
+  text-align: center;
+  margin-top: 5px;
+}
+.div1 {
+  background-color: greenyellow;
+  position: absolute;
+  outline: black;
+  left: 40px;
+  top: 30px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: solid;
+}
+.div2 {
+  background-color: greenyellow;
+  position: absolute;
+  outline: black;
+  left: 300px;
+  top: 30px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: solid;
+}
+.div3 {
+  background-color: greenyellow;
+  position: absolute;
+  outline: black;
+  left: 40px;
+  top: 290px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: solid;
+}
+.div4 {
+  background-color: greenyellow;
+  position: absolute;
+  outline: black;
+  left: 300px;
+  top: 290px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: solid;
+}
