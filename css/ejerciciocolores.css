@@ -37,6 +37,10 @@ i {
   margin-left: 52.5%;
   margin-top: 35px
 }
+.suma3 {
+  margin-left: 52.5%;
+  margin-top: -30px
+}
 .igual {
   margin-left: 57.8%;
   margin-top: -33px;
@@ -83,3 +87,35 @@ i {
     margin-left: 54%;
     margin-top: -48px;
   }
+.cian{
+  border-radius: 50%;
+  background-color: cyan;
+  height: 50px;
+  width: 50px;
+  margin-left: 59%;
+  margin-top: -48px;
+}
+.verde3{
+  border-radius: 50%;
+  background-color: #14ff14;
+  height: 50px;
+  width: 50px;
+  margin-left: 49%;
+  margin-top: 20px;
+}
+.rojo3{
+  border-radius: 50%;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  margin-left: 54%;
+  margin-top: -54px;
+}
+.amarillo{
+  border-radius: 50%;
+  background-color: yellow;
+  height: 50px;
+  width: 50px;
+  margin-left: 59%;
+  margin-top: -33px;
+}
