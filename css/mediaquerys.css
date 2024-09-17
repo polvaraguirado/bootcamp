@@ -1,0 +1,46 @@
+body {
+  background-color: white;
+}
+
+@media (max-width: 320px) {
+  body {
+    visibility: visible;
+  }
+}
+body {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.cajanaranja {
+  background-color: orange;
+  width: 710px;
+  height: 70px;
+  float: right;
+  margin-right: 25px;
+}
+.cajanaranja2 {
+  background-color: orange;
+  width: 710px;
+  height: 70px;
+}
+.cajaverde {
+  background-color: greenyellow;
+  width: 1440px;
+  height: 500px;
+  margin-top: 30px;
+}
+.cajaazul{
+    background-color: rgb(68, 165, 225);
+    width: 210px;
+    height: 200px;
+    float: left;
+    margin-left: 200px;
+}
+
+.cajagris{
+    background-color: lightgray;
+    width: 210px;
+    height: 200px;
+    clear: both;
+    margin-top: 200px;
+}
