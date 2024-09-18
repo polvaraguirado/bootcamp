@@ -56,7 +56,7 @@ nav {
   margin-right: 640px;
   margin-top: -15px;
 }
-.containernaranja {
+.containergrande {
   border: 3px solid rgb(164, 246, 93);
   background-color: rgb(164, 246, 93);
   margin-left: 10px;
@@ -168,21 +168,21 @@ nav {
   position: absolute;
   color: white;
   margin-left: 90px;
-  margin-top: 60px;
+  margin-top: 150px;
   font-size: 23px;
 }
 .lineablanca {
   position: absolute;
   border-bottom: 2px solid white;
   width: 300px;
-  top: 1715px;
+  top: 1805px;
   left: 130px;
 }
 .titulosearch{
     position: absolute;
     color: white;
     width: 300px;
-    top: 1755px;
+    top: 1815px;
     left: 130px;
     font-size: 20px;
 }
@@ -190,7 +190,7 @@ nav {
     position: absolute;
     color: rgba(255, 255, 255, 0.9);
     width: 300px;
-    top: 1820px;
+    top: 1880px;
     left: 130px;
     font-size: 14px;
 }
@@ -198,7 +198,7 @@ nav {
     position: absolute;
     color: white;
     width: 300px;
-    top: 1845px;
+    top: 1905px;
     left: 130px;
     font-size: 20px;
 }
@@ -206,7 +206,7 @@ nav {
     position: absolute;
     color: rgba(255, 255, 255, 0.9);
     width: 300px;
-    top: 1910px;
+    top: 1970px;
     left: 130px;
     font-size: 14px;
 }
@@ -214,7 +214,7 @@ nav {
     position: absolute;
     color: white;
     width: 300px;
-    top: 1935px;
+    top: 1995px;
     left: 130px;
     font-size: 20px;
 }
@@ -222,7 +222,7 @@ nav {
     position: absolute;
     color: rgba(255, 255, 255, 0.9);
     width: 300px;
-    top: 2000px;
+    top: 2060px;
     left: 130px;
     font-size: 14px;
 }
@@ -230,7 +230,13 @@ nav {
 .fotokanye{
     position: absolute;
     width: 300px;
-    width: 300px;
     margin-left: 1050px;
     margin-top: -730px;
+}
+.spotifyblanco{
+  position: absolute;
+  margin-left: 760px;
+  margin-top: 300px;
+  width: 100px;
+  height: 100px;
 }
