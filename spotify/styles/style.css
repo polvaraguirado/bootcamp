@@ -57,7 +57,7 @@ nav {
   margin-right: 640px;
   margin-top: -15px;
 }
-.containernaranja {
+.containergrande {
   border: 3px solid rgb(164, 246, 93);
   background-color: rgb(164, 246, 93);
   margin-left: 10px;
@@ -169,16 +169,17 @@ nav {
   position: absolute;
   color: white;
   margin-left: 90px;
-  margin-top: 60px;
+  margin-top: 150px;
   font-size: 23px;
 }
 .lineablanca {
   position: absolute;
   border-bottom: 2px solid white;
   width: 300px;
-  top: 1715px;
+  top: 1805px;
   left: 130px;
 }
+<<<<<<< HEAD
 .titulosearch {
   position: absolute;
   color: white;
@@ -234,6 +235,62 @@ nav {
   width: 300px;
   margin-left: 1050px;
   margin-top: -730px;
+=======
+.titulosearch{
+    position: absolute;
+    color: white;
+    width: 300px;
+    top: 1815px;
+    left: 130px;
+    font-size: 20px;
+}
+.textosearch{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    top: 1880px;
+    left: 130px;
+    font-size: 14px;
+}
+.titulobrowse{
+    position: absolute;
+    color: white;
+    width: 300px;
+    top: 1905px;
+    left: 130px;
+    font-size: 20px;
+}
+.textobrowse{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    top: 1970px;
+    left: 130px;
+    font-size: 14px;
+}
+.titulodiscover{
+    position: absolute;
+    color: white;
+    width: 300px;
+    top: 1995px;
+    left: 130px;
+    font-size: 20px;
+}
+.textodiscover{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    top: 2060px;
+    left: 130px;
+    font-size: 14px;
+}
+
+.fotokanye{
+    position: absolute;
+    width: 300px;
+    margin-left: 1050px;
+    margin-top: -730px;
+>>>>>>> 6bd095af313da8930fffb21f1659f46beb726dfb
 }
 .spotifyblanco{
   position: absolute;
