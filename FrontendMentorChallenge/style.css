@@ -1,0 +1,120 @@
+body {
+  margin-left: 270px;
+  margin-top: 150px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  width: 333px;
+  height: 480px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  float: left;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  width: 333px;
+  height: 480px;
+
+  float: left;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  width: 333px;
+  height: 480px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  float: left;
+}
+
+.sedansimagen {
+  position: absolute;
+  margin: 50px;
+  margin-top: 70px;
+}
+
+.titulosedans {
+  position: absolute;
+  left: 320px;
+  top: 260px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+.textosedans {
+  position: absolute;
+  left: 320px;
+  top: 340px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learnmoresedans {
+  position: absolute;
+  left: 320px;
+  top: 500px;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  color: hsl(31, 77%, 52%);
+  font-family: sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.learnmoresedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 2px solid white;
+}
+
+.suvsimagen {
+  position: absolute;
+  margin: 50px;
+  margin-top: 70px;
+  left: 600px;
+}
+
+.titulosuvs {
+  position: absolute;
+  left: 650px;
+  top: 260px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+.textosuvs {
+  position: absolute;
+  left: 650px;
+  top: 340px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learnmoresuvs{
+    position: absolute;
+    left: 650px;
+    top: 500px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    color: hsl(184, 100%, 22%);
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learnmoresuvs:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    border: 2px solid white;
+  }
+  
