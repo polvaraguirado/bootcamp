@@ -32,3 +32,5 @@ let funcion = function(){
 
 }
     
+var nombre2= ('Pol')
+console.log(nombre2)
