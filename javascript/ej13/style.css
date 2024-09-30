@@ -1,0 +1,27 @@
+.caja1 {
+  border: 1px solid;
+  width: 240px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.caja2 {
+  border: 1px solid;
+  width: 240px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  margin-left: 20px;
+  width: 30px;
+}
+
+button {
+  padding: 3px;
+}
+
+.output{
+font-size: 25px;
+}
