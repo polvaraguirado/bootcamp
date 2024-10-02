@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piedra papel tijeras</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Piedra papel o tijeras</h2>
+    <button onclick="mostrarjuego()">Empieza el juego</button>
+    <div id="oculto" class="oculto">
+      <label for="opcion">Elige tu opción:</label>
+      <select id="opcion">
+        <option value="piedra">Piedra</option>
+        <option value="papel">Papel</option>
+        <option value="tijeras">Tijeras</option>
+      </select>
+      <button onclick="jugar()">Jugar</button>
 
-    <button id="empezarjuego">Empieza el juego</button>
+      <p id="eleccioncomputer"></p>
+      <p id="resultado"></p>
+    </div>
 
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
