@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+    </style>
   </head>
   <body>
     <div class="exterior">
       <div class="top">
         <h2>Calc</h2>
         <h2 class="tema">Tema</h2>
-<div class="cambiartema">
-  <label>
-    <input value="tema1" name="value-radio" id="tema1" type="radio" />
-    <span>1</span>
-  </label>
-  <label>
-    <input value="tema2" name="value-radio" id="tema2" type="radio" />
-    <span> 2</span>
-  </label>
-  <label>
-    <input value="tema3" name="value-radio" id="tema3" type="radio" />
-    <span> 3</span>
-  </label>
-  <span class="seleccion"></span>
-</div>
-
+        <div class="cambiartema" id="cambiartema">
+          <label>
+            <input value="tema1" name="value-radio" id="tema1" type="radio" />
+            <span>1</span>
+          </label>
+          <label>
+            <input value="tema2" name="value-radio" id="tema2" type="radio" />
+            <span> 2</span>
+          </label>
+          <label>
+            <input value="tema3" name="value-radio" id="tema3" type="radio" />
+            <span> 3</span>
+          </label>
+          <span class="seleccion"></span>
+        </div>
       </div>
 
       <div class="pantalla">0</div>
@@ -62,5 +64,6 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="cambiotema.js"></script>
   </body>
 </html>

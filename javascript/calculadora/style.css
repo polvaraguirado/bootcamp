@@ -1,13 +1,14 @@
 body {
   background-color: #242f43;
   margin: 100px;
+  
 }
 
 .exterior {
   width: 370px;
   height: 560px;
   background-color: #394666;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 5px;
   margin-left: 20px;
   margin-top: 20px;
@@ -15,9 +16,12 @@ body {
 h2 {
   font-size: 18px;
   color: white;
-  font-family: fantasy;
   font-weight: 50;
   margin: 15px;
+  font-family: "League Spartan", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .tema {
   margin-right: -90px;
@@ -76,7 +80,7 @@ h2 {
 }
 
 .cambiartema label:has(input:checked) ~ .seleccion {
-  background-color: orange;
+  background-color: #61729d;
   display: inline-block;
 }
 
@@ -102,7 +106,10 @@ h2 {
   color: white;
   font-size: 30px;
   text-align: right;
-  font-family: fantasy;
+  font-family: "League Spartan", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .teclado {
   background-color: #242f43;
@@ -117,47 +124,62 @@ h2 {
   gap: 20px;
   margin: 5px;
   padding: 8px;
-  height: auto;
 }
 .normal {
   height: 52px;
   background-color: #eae3db;
-  font-size: 18px;
+  font-size: 25px;
   box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
     #eae3db 1.5px 1.5px 2px 0px inset, grey -3.2px -3.2px 8px 0px inset;
   cursor: pointer;
   transition: 0.1s ease-in-out;
   border: none;
   outline: none;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
 }
 .amplio {
   background-color: #61729d;
   grid-column: span 2;
   height: 60px;
+  font-size: 25px;
+  font-family: "League Spartan", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .azul {
   background-color: #61729d;
   color: white;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
     #61729d 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
   cursor: pointer;
   transition: 0.1s ease-in-out;
   border: none;
   outline: none;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .rojo {
   background-color: red;
   color: white;
-  font-size: 17px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px, red 1.5px 1.5px 2px 0px inset,
-    #192033 -3.2px -3.2px 8px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    tomato 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
   cursor: pointer;
   transition: 0.1s ease-in-out;
   border: none;
   outline: none;
+  border-radius: 5px;
 }
 
 .azul:active {
@@ -168,10 +190,138 @@ h2 {
 .normal:active {
   box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
     #c7c3c0 -3.2px -3.2px 8px 0px inset;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .rojo:active {
   box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
     #c7c3c0 -3.2px -3.2px 8px 0px inset;
-  background-color: #F96C5B;
+  background-color: #f96c5b;
+}
+
+/* TEMA2 */
+.tema2 h2 {
+  color: rgb(231, 154, 11);
+  
+}
+.tema2 .cambiartema {
+  color: rgb(231, 154, 11);
+
+  border: 2px solid rgb(231, 154, 11);
+}
+
+body.tema2 {
+  background-color: #e6e6e6;
+}
+
+body.tema2 .exterior {
+  background-color: #d3cdcd;
+}
+
+body.tema2 .pantalla {
+  background-color: #e6e6e6;
+  color: rgb(231, 154, 11);
+}
+body.tema2 .teclado {
+  background-color: #d3cdcd;
+}
+body.tema2 .normal {
+  background-color: wheat;
+  color: rgb(83, 54, 0);
+}
+
+body.tema2 .azul {
+  background-color: #71f2ff;
+  color: rgb(83, 54, 0);
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    #71f2ff 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
+}
+
+body.tema2 .amplio {
+  background-color: #ff8b38;
+  color: rgb(83, 54, 0);
+  grid-column: span 2;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    #ff8b38 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
+}
+body.tema2 .azul:active {
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
+    #c7c3c0 -3.2px -3.2px 8px 0px inset;
+  background-color: #71dae4;
+}
+body.tema2 .amplio:active {
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
+    #c7c3c0 -3.2px -3.2px 8px 0px inset;
+  background-color: #f19d60;
+}
+body.tema2 .cambiartema label:has(input:checked) ~ .seleccion {
+  background-color: orange;
+  display: inline-block;
+}
+
+/* TEMA3 */
+
+.tema3 h2 {
+  color: yellow;
+}
+.tema3 .cambiartema {
+  color: yellow;
+
+  border: 2px solid yellow;
+}
+body.tema3 {
+  background-color: #1e0837;
+}
+
+body.tema3 .exterior {
+  background-color: #17062a;
+}
+
+body.tema3 .pantalla {
+  background-color: #1e0837;
+  color: yellow;
+}
+body.tema3 .teclado {
+  background-color: #1e0837;
+}
+body.tema3 .normal {
+  background-color: #331b4d;
+  color: yellow;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    #331b4d 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
+}
+
+body.tema3 .azul {
+  background-color: #8631b0;
+  color: yellow;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    #331b4d 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
+}
+
+body.tema3 .amplio {
+  background-color: yellow;
+  color: black;
+  grid-column: span 2;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    yellow 1.5px 1.5px 2px 0px inset, #192033 -3.2px -3.2px 8px 0px inset;
+}
+body.tema3 .normal:active {
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
+    rgb(122, 65, 146) -3.2px -3.2px 8px 0px inset;
+  background-color: rgb(103, 21, 136);
+}
+body.tema3 .azul:active {
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
+    #c7c3c0 -3.2px -3.2px 8px 0px inset;
+  background-color: #6b34ac;
+}
+body.tema3 .amplio:active {
+  box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
+    #c7c3c0 -3.2px -3.2px 8px 0px inset;
+  background-color: rgb(223, 223, 43);
+}
+body.tema3 .cambiartema label:has(input:checked) ~ .seleccion {
+  background-color: #94fff9;
+  display: inline-block;
 }
