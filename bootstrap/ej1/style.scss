@@ -1,0 +1,55 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+@include media-breakpoint-only (xs){
+  .containerxs{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-only (sm){
+  .containersm{
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-only (md){
+  .containermd{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-only (lg){
+  .containerlg{
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-only (lg){
+  .containerlg{
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-only (xl){
+  .containerxl{
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-only (xxl){
+  .containerxxl{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+}
