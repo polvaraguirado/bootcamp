@@ -1,62 +1,128 @@
-function incrementomayor(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+import Pj from "./models/pj.js";
+import Utils from "./utils.js";
+
+class Init {
+  // Models
+  _pj = new Pj();
+  _utils = new Utils();
+
+  //Containers
+  _percentajeHungerContainer;
+  _percentageEntertainmentContainer;
+  _percentageCombatContainer;
+  _percentageRestContainer;
+
+  constructor() {
+    this.initializeContainers();
+    this.initizeButtonsUI();
+    this.lifeCycle();
   }
-  
-  class PorcentajeManager {
-    constructor() {
 
-      this.porcentaje = parseInt(localStorage.getItem('porcentaje')) || 0;
-      this.porcentajeElement = document.getElementById('porcentaje');
-      this.botonMayorElement = document.getElementById('incrementomayor');
-      this.botonMenorElement = document.getElementById('incrementomenor');
-  
-      this.actualizarUI();
-  
-      this.botonMayorElement.addEventListener('click', () => this.incrementarPorcentajeMayor());
-      this.botonMenorElement.addEventListener('click', () => this.incrementarPorcentajeMenor());
-  
-      this.iniciarDescuento();
-    }
-  
-    incrementarPorcentajeMayor() {
-      const incremento = incrementomayor(20, 35);
-      this.porcentaje = Math.min(this.porcentaje + incremento, 100);
-      localStorage.setItem('porcentaje', this.porcentaje.toString());
+  bigIncrement() {
+    let MAX_VALUE = 35;
+    let MIN_VALUE = 20;
+    return Math.floor(Math.random() * (MAX_VALUE - MIN_VALUE + 1) + MIN_VALUE);
+  }
 
+  smallIncrement() {
+    let MAX_VALUE = 13;
+    let MIN_VALUE = 2;
+    return Math.floor(Math.random() * (MAX_VALUE - MIN_VALUE + 1) + MIN_VALUE);
+  }
 
-      this.actualizarUI();
-    }
-  
-    incrementarPorcentajeMenor() {
-      const incremento = incrementomayor(2, 13);
-      this.porcentaje = Math.min(this.porcentaje + incremento, 100);
-      localStorage.setItem('porcentaje', this.porcentaje.toString());
-      this.actualizarUI();
-    }
-  
-    iniciarDescuento() {
-      setInterval(() => {
-        if (this.porcentaje > 0) {
-          this.porcentaje = Math.max(this.porcentaje - 1, 0);
-          localStorage.setItem('porcentaje', this.porcentaje.toString());
-          this.actualizarUI();
-        }
-      }, 2000);
-    }
-  
-    actualizarUI() {
-      this.porcentajeElement.textContent = `${this.porcentaje}% saciado`;
-      if (this.porcentaje >= 100) {
-        this.botonMayorElement.disabled = true;
-        this.botonMenorElement.disabled = true;
-      } else {
-        this.botonMayorElement.disabled = false;
-        this.botonMenorElement.disabled = false;
+  lifeCycle() {
+    let PERCENTAGE_LOWER_STATS = 2;
+    setInterval(() => {
+      this._pj.hunger.hungerPointsDown(
+        this._utils.percentage(
+          this._pj.hunger._hungerPoints,
+          PERCENTAGE_LOWER_STATS
+        )
+      );
+      this._pj.combat.combatPointsDown(
+        this._utils.percentage(
+          this._pj.combat._combatPoints,
+          PERCENTAGE_LOWER_STATS
+        )
+      );
+      this._pj.entertainment.entertainmentPointsDown(
+        this._utils.percentage(
+          this._pj.entertainment._entertainmentPoints,
+          PERCENTAGE_LOWER_STATS
+        )
+      );
+      this._pj.rest.restPointsDown(
+        this._utils.percentage(
+          this._pj.rest._restPoints,
+          PERCENTAGE_LOWER_STATS
+        )
+      );
+      
+      if (this._pj.hunger._hungerPoints > 100) {
+        this._pj.hunger._hungerPoints= "hole que tal"
       }
-    }
+      this._utils.updateValue(this._percentajeHungerContainer, this._pj.hunger._hungerPoints);
+      this._utils.updateValue(this._percentageEntertainmentContainer, this._pj.entertainment._entertainmentPoints);
+      // this.utils.updateValue(this._percentageCombatContainer, this._pj.combat._combatPoints);
+      // this.utils.updateValue(this._percentageRestContainer, this._pj.rest._restPoints);
+    }, 2000);
   }
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    new PorcentajeManager();
-  });
-  
+
+  initializeContainers() {
+    this._percentajeHungerContainer = document.getElementById(
+      "percentajeHungerContainer"
+    );
+    this._percentageEntertainmentContainer = document.getElementById(
+      "percentageEntertainmentContainers"
+    );
+  }
+
+  initizeButtonsUI() {
+    document
+      .getElementById("bigIncrementButtonHunger")
+      .addEventListener("click", () => {
+        this._pj.hunger.hungerPointsUp(this.bigIncrement());
+        this._utils.updateValue(this._percentajeHungerContainer, this._pj.hunger._hungerPoints);
+      });
+    document
+      .getElementById("smallIncrementButtonHunger")
+      .addEventListener("click", () => {
+        this._pj.hunger.hungerPointsUp(this.smallIncrement());
+        this._utils.updateValue(this._percentajeHungerContainer, this._pj.hunger._hungerPoints);
+
+      });
+    document
+      .getElementById("bigIncrementButtonEntertainment")
+      .addEventListener("click", () => {
+        this._pj.entertainment.entertainmentPointsUp(this.bigIncrement());
+        this._utils.updateValue(this._percentageEntertainmentContainer, this._pj.entertainment._entertainmentPoints);
+      });
+    document
+      .getElementById("smallIncrementButtonEntertainment")
+      .addEventListener("click", () => {
+        this._pj.entertainment.entertainmentPointsUp(this.smallIncrement());
+        this._utils.updateValue(this._percentageEntertainmentContainer, this._pj.entertainment._entertainmentPoints);
+      });
+    document
+      .getElementById("bigIncrementButtonCombat")
+      .addEventListener("click", () => {
+        this._pj.combat.combatPointsUp(this.bigIncrement());
+      });
+    document
+      .getElementById("smallIncrementButtonCombat")
+      .addEventListener("click", () => {
+        this._pj.combat.combatPointsUp(this.smallIncrement());
+      });
+    document
+      .getElementById("bigIncrementButtonRest")
+      .addEventListener("click", () => {
+        this._pj.rest.restPointsUp(this.bigIncrement());
+      });
+    document
+      .getElementById("smallIncrementButtonRest")
+      .addEventListener("click", () => {
+        this._pj.rest.restPointsUp(this.smallIncrement());
+      });
+  }
+}
+new Init();
