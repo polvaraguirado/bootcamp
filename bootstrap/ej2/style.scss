@@ -1,0 +1,47 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+body{
+  margin: 0px;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+@include media-breakpoint-between(xs, sm) {
+  .xssm {
+    background-color: violet;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-between(sm, md) {
+  .smmd {
+    background-color: violet;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-between(md,lg) {
+  .mdlg {
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-between(lg,xl) {
+  .lgxl {
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@include media-breakpoint-between(xl,xxl) {
+  .xlxxl {
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+  }
+}

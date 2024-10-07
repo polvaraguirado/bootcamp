@@ -8,26 +8,54 @@
   </head>
   <body>
     <div class="exterior">
-      <h2>Calc</h2>
-      <div class="pantalla"></div>
+      <div class="top">
+        <h2>Calc</h2>
+        <h2 class="tema">Tema</h2>
+<div class="cambiartema">
+  <label>
+    <input value="tema1" name="value-radio" id="tema1" type="radio" />
+    <span>1</span>
+  </label>
+  <label>
+    <input value="tema2" name="value-radio" id="tema2" type="radio" />
+    <span> 2</span>
+  </label>
+  <label>
+    <input value="tema3" name="value-radio" id="tema3" type="radio" />
+    <span> 3</span>
+  </label>
+  <span class="seleccion"></span>
+</div>
+
+      </div>
+
+      <div class="pantalla">0</div>
       <div class="teclado">
         <div class="botones">
-          <button onclick="appendNumber('7')"><p>7</p></button>
-          <button onclick="appendNumber('8')"><p>8</p></button>
-          <button onclick="appendNumber('9')"><p>9</p></button>
-          <button onclick="deleteLast()" class="azul">DEL</button>
-          <button onclick="appendNumber('4')"><p>4</p></button>
-          <button onclick="appendNumber('5')"><p>5</p></button>
-          <button onclick="appendNumber('6')"><p>6</p></button>
-          <button onclick="appendOperator('+')" class="azul">+</button>
-          <button onclick="appendNumber('1')"><p>1</p></button>
-          <button onclick="appendNumber('2')"><p>2</p></button>
-          <button onclick="appendNumber('3')"><p>3</p></button>
-          <button onclick="appendOperator('-')" class="azul">-</button>
-          <button onclick="appendNumber('.')"><p>.</p></button>
-          <button onclick="appendNumber('0')" class="cero"><p>0</p></button>
-          <button onclick="appendOperator('/')"><p>/</p></button>
-          <button onclick="appendOperator('*')" class="azul">x</button>
+          <button onclick="appendNumber('7')" class="normal">7</button>
+          <button onclick="appendNumber('8')" class="normal">8</button>
+          <button onclick="appendNumber('9')" class="normal">9</button>
+          <button onclick="deleteLast()" class="azul" class="normal">
+            DEL
+          </button>
+          <button onclick="appendNumber('4')" class="normal">4</button>
+          <button onclick="appendNumber('5')" class="normal">5</button>
+          <button onclick="appendNumber('6')" class="normal">6</button>
+          <button onclick="appendOperator('+')" class="azul" class="normal">
+            +
+          </button>
+          <button onclick="appendNumber('1')" class="normal">1</button>
+          <button onclick="appendNumber('2')" class="normal">2</button>
+          <button onclick="appendNumber('3')" class="normal">3</button>
+          <button onclick="appendOperator('-')" class="azul" class="normal">
+            -
+          </button>
+          <button onclick="appendNumber('.')" class="normal">.</button>
+          <button onclick="appendNumber('0')" class="normal">0</button>
+          <button onclick="appendOperator('/')" class="normal">/</button>
+          <button onclick="appendOperator('*')" class="azul" class="normal">
+            x
+          </button>
           <button onclick="clearDisplay()" class="amplio rojo">C</button>
           <button onclick="calculate()" class="amplio azul">=</button>
         </div>
