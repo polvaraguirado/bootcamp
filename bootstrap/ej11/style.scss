@@ -1,0 +1,69 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  margin: 0px;
+}
+
+.bg-purple {
+  background-color: purple;
+}
+.bg-pink {
+  background-color: pink;
+}
+.bg-magenta {
+  background-color: magenta;
+  height: 50px;
+}
+.bg-red {
+  background-color: red;
+
+
+}
+.bg-blue {
+  background-color: rgb(54, 110, 173);
+
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-grey {
+  background-color: lightgrey;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-green {
+  background-color: lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-orange {
+  background-color: orange;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-lightblue{
+    background-color: cyan;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-sm-block{
+   text-align: center;
+   line-height: 80px;
+}
+.d-sm-none{
+    text-align: center;
+    line-height: 80px;
+}
+.container-verde{
+    height: 30px;
+    line-height: 30px;
+}
