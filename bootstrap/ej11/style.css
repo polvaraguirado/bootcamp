@@ -12038,4 +12038,45 @@ body {
 .container-verde {
   height: 30px;
   line-height: 30px;
+}
+
+@media (min-width: 576px) {
+  .bg-grey {
+    width: 120px;
+  }
+}
+@media (min-width: 576px) {
+  .bg-orange {
+    width: 270px;
+  }
+}
+@media (min-width: 576px) {
+  .bg-blue {
+    height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .bg-blue {
+    height: 85px;
+    width: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .bg-grey {
+    height: 65px;
+    width: 70px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .bg-blue {
+    height: 65px;
+    width: 70px;
+  }
+}
+@media (max-width: 576px) {
+  .bg-orange {
+    height: 75px;
+    width: 600px;
+  }
 }/*# sourceMappingURL=style.css.map */
